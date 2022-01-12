@@ -6,3 +6,10 @@ gen
 
 # Node.js
 node_modules
+
+# build output
+dist/
+reports/
+
+# npm packed tarballs
+ingenots*.tgz

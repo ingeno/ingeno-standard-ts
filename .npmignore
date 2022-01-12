@@ -1,0 +1,11 @@
+.github/
+.husky/
+reports/
+src/
+/.*
+!.eslintrc.json
+commitlint.config.js
+jest.config.ts
+package-lock.json
+tsconfig.*
+*.tgz

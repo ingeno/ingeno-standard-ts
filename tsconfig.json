@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target":"es2020",
+    "module": "CommonJS",
+    "lib": [
+      "es2020"
+    ],
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": false,
+    "declaration": false,
+    "pretty": true,
+    "noImplicitAny": true,
+    "allowJs": false,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "isolatedModules": true
+  },
+  "include": [
+    "src/**/*.ts",
+  ],
+  "exclude": [
+    "**/__tests__/**"
+  ]
+}
