@@ -118,6 +118,21 @@
         "lodash/prefer-lodash-typecheck": "off",
         "unused-imports/no-unused-imports-ts": "error"
       }
+    },
+    {
+      "files": [
+        "*.{spec,test}.{js,ts}", "**/__{mocks,tests}__/**/*.{js,ts}"
+      ],
+      "extends": [
+        "plugin:jest/recommended",
+        "plugin:jest/style",
+        "plugin:jest-formatting/recommended"
+      ],
+      "rules": {
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/unbound-method": "off"
+      }
     }
   ],
   "settings": {
