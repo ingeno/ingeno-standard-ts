@@ -50,6 +50,6 @@ branches:
         strict: true
         contexts:
           - Build
-      enforce_admins: true
+      enforce_admins: false
       required_signatures: true
       restrictions: null

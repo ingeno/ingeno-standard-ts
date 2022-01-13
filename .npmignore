@@ -9,3 +9,4 @@ jest.config.ts
 package-lock.json
 tsconfig.*
 *.tgz
+CHANGELOG.md
