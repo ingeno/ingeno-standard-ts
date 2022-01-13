@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/ingeno/ingeno-standard-ts/compare/v0.0.3...v0.0.4) (2022-01-13)
+
+
+### Bug Fixes
+
+* **linter:** fix file permission preventing program execution ([df51551](https://github.com/ingeno/ingeno-standard-ts/commit/df51551df82ebff9e49bf4402631440f2e231ec8))
+
 ### [0.0.3](https://github.com/ingeno/ingeno-standard-ts/compare/v0.0.2...v0.0.3) (2022-01-13)
 
 

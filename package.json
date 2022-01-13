@@ -1,6 +1,6 @@
 {
   "name": "ingenots",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Ingeno Typescript style guide, linter, and formatter using StandardJS",
   "main": "dist/index.js",
   "bin": {
