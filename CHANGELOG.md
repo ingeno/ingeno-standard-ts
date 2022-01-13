@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/ingeno/ingeno-standard-ts/compare/v0.0.2...v0.0.3) (2022-01-13)
+
+
+### Bug Fixes
+
+* **build:** fix postinstall running husky on user installation ([16d7a7a](https://github.com/ingeno/ingeno-standard-ts/commit/16d7a7aab56a6e8acc510d298651f8a82dea3026))
+
 ### [0.0.2](https://github.com/ingeno/ingeno-standard-ts/compare/v0.0.1...v0.0.2) (2022-01-13)
 
 ### 0.0.1 (2022-01-13)
