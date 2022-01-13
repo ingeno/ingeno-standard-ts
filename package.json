@@ -70,5 +70,8 @@
     "eslint-plugin-simple-import-sort": "7.0.0",
     "eslint-plugin-unused-imports": "2.0.0",
     "standard-engine": "15.0.0-0"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.5"
   }
 }
