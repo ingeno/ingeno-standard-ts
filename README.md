@@ -45,7 +45,7 @@ For best results, set it as a `script` in `package.json`:
 
 ### Configuration
 
-By default `ingeno-standard-ts` will search the current working director (cwd) for the following in order
+By default `ingeno-standard-ts` will search the current working directory (cwd) for the following in order
 
 - `tsconfig.eslint.json`
 - `tsconfig.json`
