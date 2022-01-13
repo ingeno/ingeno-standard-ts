@@ -1,25 +1,89 @@
 {
   "root": true,
-  "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module"
-  },
-  "env": {
-    "node": true
-  },
   "extends": [
     "eslint:recommended",
     "plugin:eslint-comments/recommended",
+    "plugin:import/recommended",
+    "plugin:lodash/recommended",
     "plugin:prettier/recommended",
     "plugin:promise/recommended"
   ],
+  "plugins": [
+    "eslint-comments",
+    "lodash",
+    "prettier",
+    "promise",
+    "simple-import-sort",
+    "unused-imports"
+  ],
   "rules": {
+    "import/order": "off",
+    "import/no-extraneous-dependencies": "error",
+    "import/prefer-default-export": "off",
+    "import/no-default-export": "error",
+    "import/no-namespace": "error",
+    "lodash/prefer-lodash-method": "off",
+    "lodash/prefer-noop": "off",
+    "lodash/prefer-constant": "off",
+    "lodash/prop-shorthand": "error",
+    "lodash/path-style": [
+      "error", "as-needed"
+    ],
+    "lodash/prefer-lodash-chain": "off",
+    "lodash/import-scope": [
+      "error", "full"
+    ],
     "no-console": "off",
     "promise/always-return": "warn",
     "promise/catch-or-return": "warn",
-    "promise/prefer-await-to-then": "warn"
+    "promise/prefer-await-to-then": "warn",
+    "sort-imports": "off",
+    "simple-import-sort/exports": "error",
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [
+          [
+            "^react"
+          ],
+          [
+            "^\\w", "^@[^\\/]\\w"
+          ],
+          [
+            "^\\u0000"
+          ],
+          [
+            "^@/"
+          ],
+          [
+            "^[^.]"
+          ],
+          [
+            "^\\.\\.(?!/?$)", "^\\.\\./?$"
+          ],
+          [
+            "^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"
+          ]
+        ]
+      }
+    ],
+    "unused-imports/no-unused-imports": "error"
   },
   "overrides": [
+    {
+      "files": [
+        "*.js"
+      ],
+      "env": {
+        "node": true
+      },
+      "extends": [
+        "plugin:node/recommended"
+      ],
+      "plugins": [
+        "node"
+      ]
+    },
     {
       "files": ["*.ts"],
       "parser": "@typescript-eslint/parser",
@@ -30,20 +94,23 @@
         "node": true
       },
       "plugins": [
-        "@typescript-eslint",
-        "prettier"
+        "@typescript-eslint"
       ],
       "extends": [
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        "plugin:prettier/recommended"
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
       ],
       "rules": {
         "@typescript-eslint/ban-ts-comment": "off",
-        "block-spacing": ["error", "always"],
-        "no-var": "warn"
+        "lodash/prefer-lodash-typecheck": "off"
       }
     }
-  ]
+  ],
+  "settings": {
+    "import/internal-regex": "^@/",
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
 }

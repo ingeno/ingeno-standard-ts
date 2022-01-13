@@ -1,5 +1,6 @@
+// eslint-disable-next-line import/no-namespace
 import * as eslint from 'eslint'
-import * as path from 'path'
+import { join } from 'path'
 // @ts-ignore
 import { StandardEngineOptions } from 'standard-engine'
 // eslint-disable-next-line @typescript-eslint/no-var-requires,@typescript-eslint/no-unsafe-assignment
@@ -17,6 +18,6 @@ export const options: StandardEngineOptions = {
   tagline: 'Ingeno Typescript standards',
   eslintConfig: {
     extensions: ['js', 'jsx', 'mjs', 'cjs', 'ts', 'tsx'],
-    overrideConfigFile: path.join(__dirname, '..', '.eslintrc.json'),
+    overrideConfigFile: join(__dirname, '..', '.eslintrc.json'),
   },
 }

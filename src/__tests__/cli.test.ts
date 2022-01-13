@@ -1,5 +1,6 @@
 // @ts-ignore
-import * as standardEngine from 'standard-engine'
+import { cli as standardEngineCli } from 'standard-engine'
+
 import { cli } from '../cli'
 // eslint-disable-next-line @typescript-eslint/no-var-requires,@typescript-eslint/no-unsafe-assignment
 const packageJson = require('../../package.json')
@@ -9,7 +10,7 @@ describe('cli', () => {
     cli()
 
     // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-    expect(standardEngine.cli).toHaveBeenCalledWith(
+    expect(standardEngineCli).toHaveBeenCalledWith(
       expect.objectContaining({
         // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,@typescript-eslint/no-unsafe-assignment
         version: packageJson.version,

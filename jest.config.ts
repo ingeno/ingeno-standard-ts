@@ -31,4 +31,5 @@ const config: Config.InitialOptions = {
   testMatch: ['**/__tests__/**/*.test.ts'],
 }
 
+// eslint-disable-next-line import/no-default-export
 export default config
