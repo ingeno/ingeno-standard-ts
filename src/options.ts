@@ -1,7 +1,7 @@
-import * as eslint from 'eslint';
-import * as path from 'path';
+import * as eslint from 'eslint'
+import * as path from 'path'
 // @ts-ignore
-import { StandardEngineOptions } from 'standard-engine';
+import { StandardEngineOptions } from 'standard-engine'
 // eslint-disable-next-line @typescript-eslint/no-var-requires,@typescript-eslint/no-unsafe-assignment
 const packageJson = require('../package.json')
 
@@ -19,4 +19,4 @@ export const options: StandardEngineOptions = {
     extensions: ['js', 'jsx', 'mjs', 'cjs', 'ts', 'tsx'],
     overrideConfigFile: path.join(__dirname, '..', '.eslintrc.json'),
   },
-};
+}

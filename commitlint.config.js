@@ -1,5 +1,5 @@
-const ERROR = 2;
-const ALWAYS = 'always';
+const ERROR = 2
+const ALWAYS = 'always'
 
 module.exports = {
   defaultIgnores: true,
@@ -20,4 +20,4 @@ module.exports = {
     'footer-leading-blank': [ERROR, ALWAYS],
     'footer-max-line-length': [ERROR, ALWAYS, Infinity],
   },
-};
+}

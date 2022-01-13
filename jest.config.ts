@@ -1,4 +1,4 @@
-import type { Config } from '@jest/types';
+import type { Config } from '@jest/types'
 
 const config: Config.InitialOptions = {
   // this is a workaround since enabling coverage breaks sourceMaps
@@ -29,6 +29,6 @@ const config: Config.InitialOptions = {
   ],
   testEnvironment: 'node',
   testMatch: ['**/__tests__/**/*.test.ts'],
-};
+}
 
-export default config;
+export default config
