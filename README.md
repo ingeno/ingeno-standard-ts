@@ -34,7 +34,7 @@ For best results, set it as a `script` in `package.json`:
 ```json
 {
   "devDependencies": {
-    "ingenots": "git+https://github.com/ingeno/ingeno-standard-ts.git#v1.0.0",
+    "ingenots": "https://github.com/ingeno/ingeno-standard-ts/releases/download/v0.0.4/ingenots-0.0.4.tgz",
     "snazzy": "9.0.0"
   },
   "scripts": {
